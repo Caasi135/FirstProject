@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class helloworld {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please Enter Name: ");
+        String name = scanner.nextLine();
+        System.out.println("Welcome Back to Java " + name);
+
+        System.out.println("please enter your age");
+        int age = scanner.nextInt();
+        if (age >= 60) {
+            System.out.println("Your Old");
+        } else if (age >= 18 && age < 60) {
+            System.out.println("Your an Adult");
+        } else {
+            System.out.println("Your Young");
+        }
+
+        System.out.println("enter a number");
+        int num1 = scanner.nextInt();
+        System.out.println("enter second number");
+        int num2 = scanner.nextInt();
+
+        System.out.println("Please enter 1 for add, 2 for subtract, 3 for multiply, and 4 for divide");
+        int cal = scanner.nextInt();
+        switch (cal) {
+            case 1:
+                int add = num1 + num2;
+                System.out.println(add);
+                break;
+            case 2:
+                int sub = num1 - num2;
+                System.out.println(sub);
+                break;
+            case 3:
+                int times = num1 * num2;
+                System.out.println(times);
+                break;
+            case 4:
+                int div = num1 + num2;
+                System.out.println(div);
+                break;
+
+            default:
+                break;
+        }
+
+        scanner.close();
+    }
+}
