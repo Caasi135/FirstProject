@@ -1,1 +1,15 @@
+public class Main() {
 
+  public static void main(String args[]){
+    Jframe frame = new Jframe();
+    frame.setTittle("Jframe Tittle");
+    frame.setDefaultCloseOperation(Jframe.EXIT_ON_CLOSE);
+    frame.setResizable(false);
+    frame.setVisible(true);
+    frame.setSize(300, 300);
+
+    ImageIcon image = new ImageIcon("logo.png");
+    frame.setIconImage(image.getImage());
+    frame.getContentPane().setBackground(color.Black);
+  }
+}
